@@ -20,7 +20,7 @@
       
     });
 
-    nixosModules.atprotoPDS = { pkgs, ... }: {
+    nixosModules.default = { pkgs, ... }: {
 
     };
   };
