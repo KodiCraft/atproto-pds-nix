@@ -2,7 +2,7 @@
   description = "NixOS modules for the atproto PDS";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-21.11";
+    nixpkgs.url = "nixpkgs/nixos-24.11";
   };
 
   outputs = { self, nixpkgs }:
