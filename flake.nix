@@ -13,11 +13,13 @@
   in
   {
     overlay = final: prev: {
-      
+      atproto-pds = with final; stdenv.mkDerivation {
+
+      }; 
     };
 
     packages = forAllSystems (system: {
-      
+      inherit (nixpkgsFor.${system}) atproto-pds; 
     });
 
     nixosModules.default = { pkgs, ... }: {
